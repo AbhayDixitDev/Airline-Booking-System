@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Information Form</title>
+    <link rel="stylesheet" href="airportReg.css">
+</head>
+<body>
+    <h1>Airport Information Form</h1>
+    <form id="airport-info-form">
+        <label for="airport-code">Airport Code:</label>
+        <input type="text" id="airport-code" name="airport-code"><br><br>
+        <label for="airport-name">Airport Name:</label>
+        <input type="text" id="airport-name" name="airport-name"><br><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+        <input type="submit" value="Submit" onclick="return airportReg()">
+    </form>
+
+    <script src="./airportReg.js"></script>
+</body>
+</html>

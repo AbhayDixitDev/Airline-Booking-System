@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    width: 25%;
+    height: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],input[type="number"] {
+    width: 100%;
+    height: 25px;
+    /* margin-bottom: 20px; */
+    border: 1px solid #ccc;
+}
+input[type="time"]{
+    padding: 0px;
+    width: 100%;
+    height: 25px;
+}
+select{
+    width: 100%;
+    height: 25px;
+    padding: 0px;
+}
+#duration-hours{
+    width: 48%;
+    padding: 0px;
+
+}
+#duration-minutes{
+    margin-left: 10px;
+    width: 48%;
+    padding: 0px;
+
+}
+#airline-id{
+    width: 101%;
+    height: 25px;  
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}

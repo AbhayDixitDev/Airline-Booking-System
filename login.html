@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Booking Login</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,600&display=swap');
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 inline-form">
+        <h2>Customer Login</h2>
+        <form id="customer-login-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email"   required>
+          </div>
+          <div class="form-group">
+            <label for="passwordCustomer">Password</label>
+            <input type="password" id="passwordCustomer" name="password"  required>
+          </div>
+          <button type="submit" onclick="return dashboardCustomer()">Login</button>
+          <p>Don't have an account? <a href="customerReg.html">Sign up</a></p>
+        </form>
+      </div>
+      <div class="col-md-6 inline-form">
+        <h2>Admin Login</h2>
+        <form id="admin-login-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="passwordAdmin">Password</label>
+            <input type="password" id="passwordAdmin" name="password" required>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="nameofwebsite">
+    Flight Booking System
+  </div>
+  <script src="./login.js"></script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+{
+  "flights": [
+    {
+      "id": "3134",
+      "airline_id": "Air India",
+      "flight_number": "AI101",
+      "departure_airport": "New Delhi",
+      "arrival_airport": "Mumbai",
+      "departure_time": "08:00",
+      "arrival_time": "11:00",
+      "duration": "3 hours 0 minutes",
+      "price": "2500"
+    },
+    {
+      "id": "21bd",
+      "airline_id": "IndiGo",
+      "flight_number": "6E202",
+      "departure_airport": "Mumbai",
+      "arrival_airport": "Bengaluru",
+      "departure_time": "09:00",
+      "arrival_time": "11:30",
+      "duration": "2 hours 30 minutes",
+      "price": "3000"
+    },
+    {
+      "id": "f86f",
+      "airline_id": "SpiceJet",
+      "flight_number": "SG303",
+      "departure_airport": "New Delhi",
+      "arrival_airport": "Hyderabad",
+      "departure_time": "10:00",
+      "arrival_time": "12:30",
+      "duration": "2 hours 30 minutes",
+      "price": "2800"
+    }
+  ],
+  "airportInfo": [
+    {
+      "id": "2b6c",
+      "airportCode": "DEL",
+      "airportName": "Indira Gandhi International Airport",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    {
+      "id": "023a",
+      "airportCode": "BOM",
+      "airportName": "Chhatrapati Shivaji Maharaj International Airport",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    {
+      "id": "9a57",
+      "airportCode": "BLR",
+      "airportName": "Bengaluru's Kempegowda International Airport",
+      "city": "Bengaluru",
+      "country": "India"
+    },
+    {
+      "id": "f8b0",
+      "airportCode": "HYD",
+      "airportName": "Rajiv Gandhi International Airport",
+      "city": "Hyderabad",
+      "country": "India"
+    },
+    {
+      "id": "6246",
+      "airportCode": "CCU",
+      "airportName": "Netaji Subhas Chandra Bose International Airport",
+      "city": "Kolkata",
+      "country": "India"
+    },
+    {
+      "id": "72f5",
+      "airportCode": "MAA",
+      "airportName": "Chennai International Airport",
+      "city": "Chennai",
+      "country": "India"
+    },
+    {
+      "id": "2e6c",
+      "airportCode": "AMD",
+      "airportName": "Sardar Vallabhbhai Patel International Airport",
+      "city": "Ahmedabad",
+      "country": "India"
+    },
+    {
+      "id": "9f60",
+      "airportCode": "JAI",
+      "airportName": "Jaipur International Airport",
+      "city": "Jaipur",
+      "country": "India"
+    },
+    {
+      "id": "c6ed",
+      "airportCode": "PNQ",
+      "airportName": "Pune International Airport",
+      "city": "Pune",
+      "country": "India"
+    },
+    {
+      "id": "f6ae",
+      "airportCode": "COK",
+      "airportName": "Cochin International Airport",
+      "city": "Kochi",
+      "country": "India"
+    },
+    {
+      "id": "b768",
+      "airportCode": "GOI",
+      "airportName": "Dabolim Airport",
+      "city": "Goa",
+      "country": "India"
+    },
+    {
+      "id": "c61c",
+      "airportCode": "BDQ",
+      "airportName": "Bagdogra International Airport",
+      "city": "Siliguri",
+      "country": "India"
+    },
+    {
+      "id": "86aa",
+      "airportCode": "CHH",
+      "airportName": "Chandigarh International Airport",
+      "city": "Chandigarh",
+      "country": "India"
+    },
+    {
+      "id": "8a08",
+      "airportCode": "CJB",
+      "airportName": "Coimbatore International Airport",
+      "city": "Coimbatore",
+      "country": "India"
+    },
+    {
+      "id": "4585",
+      "airportCode": "LKO",
+      "airportName": "Lucknow International Airport",
+      "city": "Lucknow",
+      "country": "India"
+    },
+    {
+      "id": "86b8",
+      "airportCode": "MDM",
+      "airportName": "Madurai International Airport",
+      "city": "Madurai",
+      "country": "India"
+    },
+    {
+      "id": "d5c5",
+      "airportCode": "IXE",
+      "airportName": "Mangalore International Airport",
+      "city": "Mangaluru",
+      "country": "India"
+    },
+    {
+      "id": "d6af",
+      "airportCode": "NAG",
+      "airportName": "Nagpur International Airport",
+      "city": "Nagpur",
+      "country": "India"
+    },
+    {
+      "id": "9cca",
+      "airportCode": "RST",
+      "airportName": "Rajkot International Airport",
+      "city": "Rajkot",
+      "country": "India"
+    },
+    {
+      "id": "7a99",
+      "airportCode": "SXR",
+      "airportName": "Srinagar International Airport",
+      "city": "Srinagar",
+      "country": "India"
+    },
+    {
+      "id": "ac65",
+      "airportCode": "TRV",
+      "airportName": "Trivandrum International Airport",
+      "city": "Thiruvananthapuram",
+      "country": "India"
+    },
+    {
+      "id": "151d",
+      "airportCode": "BBI",
+      "airportName": "Bhubaneswar Biju Patnaik International Airport",
+      "city": "Bhubaneswar",
+      "country": "India"
+    },
+    {
+      "id": "b837",
+      "airportCode": "GWL",
+      "airportName": "Gwalior Airport",
+      "city": "Gwalior",
+      "country": "India"
+    },
+    {
+      "id": "21e9",
+      "airportCode": "IDR",
+      "airportName": "Indore Devi Ahilya Bai Holkar Airport",
+      "city": "Indore",
+      "country": "India"
+    },
+    {
+      "id": "7766",
+      "airportCode": "JBP",
+      "airportName": "Jabalpur Airport",
+      "city": "Jabalpur",
+      "country": "India"
+    },
+    {
+      "id": "3265",
+      "airportCode": "IXJ",
+      "airportName": "Jammu Airport",
+      "city": "Jammu",
+      "country": "India"
+    },
+    {
+      "id": "02dc",
+      "airportCode": "JDH",
+      "airportName": "Jodhpur Airport",
+      "city": "Jodhpur",
+      "country": "India"
+    },
+    {
+      "id": "dbda",
+      "airportCode": "CNN",
+      "airportName": "Kannur International Airport",
+      "city": "Kannur",
+      "country": "India"
+    },
+    {
+      "id": "bc9c",
+      "airportCode": "PAT",
+      "airportName": "Patna Airport",
+      "city": "Patna",
+      "country": "India"
+    },
+    {
+      "id": "a883",
+      "airportCode": "RAI",
+      "airportName": "Raipur Airport",
+      "city": "Raipur",
+      "country": "India"
+    },
+    {
+      "id": "af2f",
+      "airportCode": "IXR",
+      "airportName": "Ranchi Airport",
+      "city": "Ranchi",
+      "country": "India"
+    }
+  ],
+  "airlines": [
+    {
+      "id": "5494",
+      "name": "Air India",
+      "iata_code": "AI",
+      "country": "India"
+    },
+    {
+      "id": "e876",
+      "name": "American Airlines",
+      "iata_code": "AA",
+      "country": "United States"
+    },
+    {
+      "id": "9626",
+      "name": "Delta Air Lines",
+      "iata_code": "DL",
+      "country": "United States"
+    },
+    {
+      "id": "0033",
+      "name": "United Airlines",
+      "iata_code": "UA",
+      "country": "United States"
+    },
+    {
+      "id": "f1a3",
+      "name": "Alaska Airlines",
+      "iata_code": "AS",
+      "country": "United States"
+    },
+    {
+      "id": "ae1c",
+      "name": "Hawaiian Airlines",
+      "iata_code": "HA",
+      "country": "United States"
+    },
+    {
+      "id": "5875",
+      "name": "Air Canada",
+      "iata_code": "AC",
+      "country": "Canada"
+    },
+    {
+      "id": "6ee7",
+      "name": "WestJet",
+      "iata_code": "WS",
+      "country": "Canada"
+    },
+    {
+      "id": "ac2e",
+      "name": "Porter Airlines",
+      "iata_code": "PD",
+      "country": "Canada"
+    },
+    {
+      "id": "4510",
+      "name": "British Airways",
+      "iata_code": "BA",
+      "country": "United Kingdom"
+    },
+    {
+      "id": "4ef9",
+      "name": "EasyJet",
+      "iata_code": "U2",
+      "country": "United Kingdom"
+    },
+    {
+      "id": "f294",
+      "name": "Ryanair",
+      "iata_code": "FR",
+      "country": "United Kingdom"
+    },
+    {
+      "id": "e4f7",
+      "name": "Qantas",
+      "iata_code": "QF",
+      "country": "Australia"
+    },
+    {
+      "id": "44f6",
+      "name": "Virgin Australia",
+      "iata_code": "VA",
+      "country": "Australia"
+    },
+    {
+      "id": "c2d2",
+      "name": "Jetstar Airways",
+      "iata_code": "JQ",
+      "country": "Australia"
+    },
+    {
+      "id": "ba58",
+      "name": "IndiGo",
+      "iata_code": "6E",
+      "country": "India"
+    },
+    {
+      "id": "035e",
+      "name": "SpiceJet",
+      "iata_code": "SG",
+      "country": "India"
+    },
+    {
+      "id": "7e75",
+      "name": "Lufthansa",
+      "iata_code": "LH",
+      "country": "Germany"
+    },
+    {
+      "id": "f07f",
+      "name": "Eurowings",
+      "iata_code": "EW",
+      "country": "Germany"
+    },
+    {
+      "id": "a26c",
+      "name": "Air France",
+      "iata_code": "AF",
+      "country": "France"
+    },
+    {
+      "id": "fcd2",
+      "name": "Transavia France",
+      "iata_code": "T0",
+      "country": "France"
+    },
+    {
+      "id": "15ea",
+      "name": "China Southern Airlines",
+      "iata_code": "CZ",
+      "country": "China"
+    },
+    {
+      "id": "f0a3",
+      "name": "China Eastern Airlines",
+      "iata_code": "MU",
+      "country": "China"
+    },
+    {
+      "id": "2261",
+      "name": "Air China",
+      "iata_code": "CA",
+      "country": "China"
+    },
+    {
+      "id": "5311",
+      "name": "Japan Airlines",
+      "iata_code": "JL",
+      "country": "Japan"
+    },
+    {
+      "id": "130b",
+      "name": "All Nippon Airways",
+      "iata_code": "NH",
+      "country": "Japan"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "baff"
+    }
+  ],
+  "customers": [
+    {
+      "id": "7da0",
+      "name": "Abhay Dixit",
+      "email": "Shivamdixit1st@gmail.com",
+      "phone": "7017709865",
+      "address": "Sagar, Madhya Pradesh",
+      "password": "1234"
+    },
+    {
+      "id": "b851",
+      "name": "Shivansh Tripathi",
+      "email": "Shivansh@gmail.com",
+      "phone": "7017709801",
+      "address": "Hoshangabad, Madhya Pradesh",
+      "password": "1234"
+    },
+    {
+      "id": "fe37",
+      "name": "Abhishek Sonkar",
+      "email": "Abhishek@gmail.com",
+      "phone": "7017709802",
+      "address": "Basti, Uttar Pradesh",
+      "password": "1234"
+    },
+    {
+      "id": "f18a",
+      "name": "Gagan Jha",
+      "email": "Gagan@gmail.com",
+      "phone": "7017709803",
+      "address": "Talbehat, Uttar Pradesh",
+      "password": "1234"
+    },
+    {
+      "id": "c024",
+      "name": "Abhay Dixit",
+      "email": "Shivamdixit1st@gmail.com",
+      "phone": "7017709865",
+      "address": "Sagar, Madhya Pradesh",
+      "password": "1234"
+    }
+  ],
+  "Admin": [
+    {
+      "id": "7da0",
+      "name": "Abhay Dixit",
+      "email": "Shivamdixit1st@gmail.com",
+      "phone": "7017709865",
+      "address": "Sagar, Madhya Pradesh",
+      "password": "Admin"
+    }
+  ]
+}

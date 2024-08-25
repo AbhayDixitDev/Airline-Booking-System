@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airline Registration Form</title>
+	<link rel="stylesheet" href="airlineReg.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Airline Registration Form</h1>
+		<form>
+			<section class="airline-info">
+				<h2>Airline Information</h2>
+				<label for="name">Airline Name:</label>
+				<input type="text" id="name" name="airline-name" ><br><br>
+				<label for="iata_code">IATA Code:</label>
+				<input type="text" id="iata_code" name="airline-code" maxlength="2"><br><br>
+				<label for="country">Country of Origin:</label>
+				<input type="text" id="country" name="country"><br><br>
+			</section>
+			<input type="submit" value="Submit" onclick=" return airlineReg()">
+		</form>
+	</div>
+    <script src="./airlineReg.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Form</title>
+    <link rel="stylesheet" href="./flightsReg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Form</h1>
+        <section>
+            <form id="flight-form">
+                <label for="airline-id">Airline Name:</label>
+                <select id="airline-id" name="airline-id">
+                    <option value="">Select Airline</option>
+                </select><br><br>
+
+                <label for="flight-number">Flight Number:</label>
+                <input type="text" id="flight-number" name="flight-number"><br><br>
+
+                <label for="departure-airport">Departure Airport:</label>
+                <select id="departure-airport" name="departure-airport">
+                    <option value="">Select Airport</option>
+                    <option value="DEL">Delhi (DEL)</option>
+                    <option value="BOM">Mumbai (BOM)</option>
+                    <option value="HYD">Hyderabad (HYD)</option>
+                    <!-- add more airports here -->
+                </select><br><br>
+
+                <label for="arrival-airport">Arrival Airport:</label>
+                <select id="arrival-airport" name="arrival-airport">
+                    <option value="">Select Airport</option>
+                    <option value="DEL">Delhi (DEL)</option>
+                    <option value="BOM">Mumbai (BOM)</option>
+                    <option value="HYD">Hyderabad (HYD)</option>
+                    <!-- add more airports here -->
+                </select><br><br>
+
+                
+
+                <label for="departure-time">Departure Time:</label>
+                <input type="time" id="departure-time" name="departure-time"><br><br>
+
+                
+
+                <label for="arrival-time">Arrival Time:</label>
+                <input type="time" id="arrival-time" name="arrival-time"><br><br>
+
+                <label for="duration">Duration:</label>
+<select id="duration-hours" name="duration-hours">
+    <option value="0">0 hours</option>
+    <option value="1">1 hour</option>
+    <option value="2">2 hours</option>
+    <option value="3">3 hours</option>
+    <option value="4">4 hours</option>
+    <option value="5">5 hours</option>
+    <option value="6">6 hours</option>
+    <option value="7">7 hours</option>
+    <option value="8">8 hours</option>
+    <option value="9">9 hours</option>
+    <option value="10">10 hours</option>
+    <option value="11">11 hours</option>
+    <option value="12">12 hours</option>
+    <option value="13">13 hours</option>
+    <option value="14">14 hours</option>
+    <option value="15">15 hours</option>
+    <option value="16">16 hours</option>
+    <option value="17">17 hours</option>
+    <option value="18">18 hours</option>
+    <option value="19">19 hours</option>
+    <option value="20">20 hours</option>
+    <option value="21">21 hours</option>
+    <option value="22">22 hours</option>
+    <option value="23">23 hours</option>
+    <option value="24">24 hours</option>
+</select>
+<select id="duration-minutes" name="duration-minutes">
+    <option value="0">0 minutes</option>
+    <option value="15">15 minutes</option>
+    <option value="30">30 minutes</option>
+    <option value="45">45 minutes</option>
+</select><br><br>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price"><br><br>
+
+                <input type="submit" value="Submit" onclick="return flightsReg()">
+            </form>
+        </section>
+    </div>
+
+    <script src="./flightsReg.js"></script>
+</body>
+</html>
