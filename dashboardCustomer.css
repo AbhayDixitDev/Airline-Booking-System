@@ -1,20 +1,33 @@
 body {
     font-family: Open Sans, sans-serif;
     font-size: 14px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background-image: url("https://images7.alphacoders.com/468/468539.jpg");
+    background-size: cover;
+
+
 }
 
 .container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width:85%;
+    background-color: #ffffff;
+    /* border: 1px solid #ddd; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.544);
+    color: rgb(205, 0, 0);
+    /* opacity: 0.55; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 2%;
 }
+#Welcome{
+    margin-top: 0px;
+    
+}
+#Welcome h1{
+    font-size: 95px;   
+    }
 
 header {
-    background-color: #3498db;
+    background-color: #1c0909;
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -26,8 +39,9 @@ header {
     font-size: 16px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 500px;
-    mix-blend-mode:darken;
-    background-image: url("https://wallpapers.com/images/hd/pastel-sky-flying-plane-background-portrait-28jp4pt91pyfg8dq.jpg");
+    /* opacity: 0.6; */
+    
+
 
 }
 
@@ -55,24 +69,26 @@ nav a {
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #ff0202;
 }
 
 main {
-    padding: 20px;
-    margin-right: 250px;
+    background-color: #5a000000;
+    
+
+
 }
 
 section {
-    background-color: #fff;
-    padding: 20px;
+    /* background-color: #fff; */
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 ul {
@@ -100,12 +116,13 @@ button[type="submit"] {
     background-color: #3498db;
     color: #fff;
     padding: 10px 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 button[type="submit"]:hover {
-    background-color: #2980b9;
+    background-color: #f30a0a;
 }
 
 button[type="submit"]:active {

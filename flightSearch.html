@@ -21,7 +21,6 @@
             </nav>
         </header>
 
-        <main>
 <form>
         <div class="form-group">
           <label for="departureCity">Departure City:</label>
@@ -34,10 +33,6 @@
           <select id="arrivalCity" name="arrivalCity">
             <option value="">Select Arrival City</option>
           </select>
-        </div>
-        <div class="form-group">
-          <label for="departureDate">Departure Date:</label>
-          <input type="date" id="departureDate" name="departureDate">
         </div>
         <button type="submit" onclick="return searchFlights()">Search Flights</button>
       </form>
@@ -62,8 +57,7 @@
       <table id="search-results"  >
 
       </table>
-                   
-        </main>
+               
     </div>
     <script src="./flightSearch.js"></script>
     <script src="./dashboardCustomer.js"></script>

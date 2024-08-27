@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  #booking-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="date"], input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="button"], input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+  }
+  .btn-close {
+    background-color: #b90000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  #passenger-info {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  .passenger input{
+    padding: 15px;
+    width: 90%;
+  }
+  h2{
+    margin: 0px;
+  }
+  
+  .passenger {
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  .passenger:last-child {
+    border-bottom: none;
+  }
+
+  #dashboardCustomerRed{
+    background-color: red;
+  }

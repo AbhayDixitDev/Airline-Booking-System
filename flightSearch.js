@@ -68,7 +68,7 @@
                 <td>${flights.arrival_time}</td>
                 <td>${flights.duration}</td>
                 <td>${flights.price}</td>
-                <td><Button type="button" onclick="return book(${flights.id})">Book</Button></td>
+              <td><Button type="button" onclick="return book('${flights.id}','${flights.departure_airport}','${flights.arrival_airport}')">Book</Button></td>
               </tr>
             `;
           });
@@ -83,7 +83,8 @@
     return false;
   }
 
-  function book(id){
-    document.location.href="bookings.html"
-    
+  function book(id,departcity,arrivecity) {
+    document.location.href = `bookings.html?flightid=${encodeURIComponent(id)}&departurecity=${encodeURIComponent(departcity)}&arrivalcity=${encodeURIComponent(arrivecity)}`;
+    return false;
   }
+

@@ -6,7 +6,7 @@
     <title>Flight Booking System Dashboard</title>
     <link rel="stylesheet" href="dashboardCustomer.css">
 </head>
-<body>
+<body onload="logincredentialscheck()">
     <div class="container" >
         <header>
             <nav class="nav-right">
@@ -20,42 +20,13 @@
             </nav>
         </header>
         <main>
-            <section id="flights">
-                <h2>Flights</h2>
-                <form>
-                    <input type="text" id="flight-search" placeholder="Search for flights">
-                    <button type="submit">Search</button>
-                </form>
-                <ul id="flight-list">
-                    <!-- flight list will be generated here -->
-                </ul>
-            </section>
-            <section id="bookings">
-                <h2>Bookings</h2>
-                <ul id="booking-list">
-                    <!-- booking list will be generated here -->
-                </ul>
-            </section>
-            <section id="passengers">
-                <h2>Passengers</h2>
-                <ul id="passenger-list">
-                    <!-- passenger list will be generated here -->
-                </ul>
-            </section>
-            <section id="reports">
-                <h2>Reports</h2>
-                <ul id="report-list">
-                    <!-- report list will be generated here -->
-                </ul>
-            </section>
-            <section id="settings">
-                <h2>Settings</h2>
-                <form>
-                    <label for="password">Change Password:</label>
-                    <input type="password" id="password" placeholder="New password">
-                    <button type="submit">Update</button>
-                </form>
-            </section>
+
+            <div id="Welcome">
+                <h1>Welcome to <br>Flight Booking System <br>Dashboard</h1>
+            </div>
+           
+            
+            
         </main>
     </div>
     <script src="dashboardCustomer.js"></script>

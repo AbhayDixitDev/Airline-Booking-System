@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Flight Booking Form</title>
+  <link rel="stylesheet" href="bookings.css">
 </head>
-<body>
-    
 
-    <script src="./bookings.js"></script>
+<body >
+    <h1>Flight Booking Form</h1>
+    <form id="booking-form">
+      <label for="departure-city">Departure City:</label>
+      <input type="text" id="departure-city" name="departure-city"><br>
+      <label for="arrival-city">Arrival City:</label>
+      <input type="text" id="arrival-city" name="arrival-city"><br>
+      <label for="departure-date">Departure Date:</label>
+      <input type="date" id="departure-date" name="departure-date"><br>
+      <label for="flight-number">Flight Number:</label>
+      <input type="text" id="flight-number" name="flight-number"><br>
+      <label for="adults">Number of Adults:</label>
+      <input type="number" id="adults" name="adults" min="1" max="10"  value="0" required><br>
+      <label for="children">Number of Children:</label>
+      <input type="number" id="children" name="children" min="0" max="10" value="0">
+  
+      <h2>Passenger Information:</h2>
+      <div id="passenger-info">
+        <!-- Passenger fields will be added dynamically here -->
+      </div>
+  
+      <input type="button" id="add-passenger" value="Add Another Passenger">
+      <input type="submit" value="Book Flight">
+      <a href="dashboardCustomer.html" class="btn-close">Close</a>
+
+    </form>
+
+
+    <script src="./bookings.js">
+        requirejs(['bookings']);
+    </script>
 </body>
 </html>

@@ -1,6 +1,7 @@
+
+
 form {
   max-width: 500px;
-  margin: 40px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -28,8 +29,8 @@ input[type="date"] {
   border: 1px solid #ccc;
 }
 
-button[type="submit"] {
-  background-color: #4CAF50;
+button[type="button"] {
+  background-color: #f01212;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -48,6 +49,10 @@ button[type="submit"]:hover {
   /* border-radius: 10px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+#search-results tr{
+ background-color: white;
+ 
+ }
 #search-results tr td{
  width:110px;
     border: 2px solid black;
@@ -61,11 +66,13 @@ button[type="submit"]:hover {
     /* width: 58%; */
     /* border: 1px solid black; */
     border-radius: 10px;
+    background-color: white;
   }
   #tableHeading div{
     display: flex;
     border: 2px solid black;
     padding: 10px;
     width: 110px;
+    background-color: white;
 
   }
