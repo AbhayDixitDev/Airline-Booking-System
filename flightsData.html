@@ -8,24 +8,24 @@
 </head>
 <body>
     <body onload="logincredentialscheck()">
-    
+        <header>
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="./flightsData.html">Flights Data</a></li>
+                    <li><a href="booking.html">History</a></li>
+                    <li><a href="./passengers.html">Passengers</a></li>
+                    <li><a href="./updateCustomerData.html">Update Profile</a></li>
+                    <li><a href="./login.html" onclick="logout()">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
         
 
         <div class="container" >
             <h1>Flights   </h1>
         <button id="add-flight-button" onclick="addFlight()">Add Flight</button>
 
-            <header>
-                <nav class="nav-right">
-                    <ul>
-                        <li><a href="./flightsData.html">Flights Data</a></li>
-                        <li><a href="booking.html">History</a></li>
-                        <li><a href="./passengers.html">Passengers</a></li>
-                        <li><a href="./updateCustomerData.html">Update Profile</a></li>
-                        <li><a href="./login.html" onclick="logout()">Logout</a></li>
-                    </ul>
-                </nav>
-            </header>
+            
             <main>
     <table id="flights-table" border="1px">
       <thead>
@@ -128,6 +128,7 @@
             <input type="number" id="price" name="price"><br><br>
     
             <input type="submit" value="Submit" onclick="return flightsReg()">
+<button type="cancel" onclick="close()">Cancel</button>
         </form>
     <script src="./flightsData.js"></script>
 </body>

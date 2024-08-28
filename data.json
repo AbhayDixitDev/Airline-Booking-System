@@ -32,6 +32,17 @@
       "arrival_time": "12:30",
       "duration": "2 hours 30 minutes",
       "price": "2800"
+    },
+    {
+      "id": "086b",
+      "airline_id": "Air India",
+      "flight_number": "6E203",
+      "departure_airport": "New Delhi",
+      "arrival_airport": "Pune",
+      "departure_time": "08:50",
+      "arrival_time": "09:56",
+      "duration": "1 hours 0 minutes",
+      "price": "2500"
     }
   ],
   "airportInfo": [

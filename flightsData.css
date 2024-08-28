@@ -23,7 +23,7 @@ header {
     padding: 0px;
     text-align: center;
     position: fixed;
-    top: -20px;
+    top: 0px;
     right: 0px;
     width: 250px;
     height: 40vh;
@@ -42,6 +42,7 @@ header {
     top: 10%;
     /* transform: translateY(-50%); */
     right: 20px;
+    color: white;
 }
 
 nav ul {
@@ -189,6 +190,7 @@ button[type="submit"]:active {
     z-index: 5;
     left: 35%;
     top: 200px;
+    display: none;
   }
   ::-webkit-scrollbar{
     display: none;
@@ -243,4 +245,20 @@ button[type="submit"]:active {
   
   input[type="submit"]:hover {
     background-color: #3e8e41;
+  }
+
+
+  button[type="cancel"] {
+    background-color: #690000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="cancel"]:hover {
+    background-color: #ffffff;
+    color: #690000;
+    border: 1px solid #690000;
   }
