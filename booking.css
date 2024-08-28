@@ -9,8 +9,9 @@ body {
 }
 
 .container {
-    max-width:85%;
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
+width: 68%;
+    display: inline-block;
     /* border: 1px solid #ddd; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.544);
     color: rgb(205, 0, 0);

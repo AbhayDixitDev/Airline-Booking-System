@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Booking System Dashboard</title>
-    <link rel="stylesheet" href="dashboardCustomer.css">
+    <link rel="stylesheet" href="booking.css">
 </head>
 <body onload="logincredentialscheck()">
     <div class="container" >
@@ -12,7 +12,7 @@
             <nav class="nav-right">
                 <ul>
                     <li><a href="./flightSearch.html">Flights</a></li>
-                    <li><a href="#bookings">Bookings</a></li>
+                    <li><a href="./booking.html">History</a></li>
                     <li><a href="#passengers">Passengers</a></li>
                     <li><a href="#reports">Reports</a></li>
                     <li><a href="#settings">Settings</a></li>
@@ -20,15 +20,23 @@
             </nav>
         </header>
         <main>
+            <table width="100%" border="1px" >
+                <tr>
+                    <th width="150px">Departure City</th>
+                    <th width="120px">Arrival City</th>
+                    <th width="165px">Flight Date</th>
+                    <th width="70px">Flight Number</th>
+                    <th>Passenger Details</th>
 
-            <div id="Welcome">
-                <h1>Welcome to <br>Flight Booking System <br>Dashboard</h1>
-            </div>
+                </tr>
+            </table>
+            <table id="history" width="100%" border="1px" >
+            </table>
            
             
             
         </main>
     </div>
-    <script src="dashboardCustomer.js"></script>
+    <script src="booking.js"></script>
 </body>
 </html>
