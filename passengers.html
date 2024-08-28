@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Booking System Dashboard</title>
-    <link rel="stylesheet" href="dashboardCustomer.css">
+    <title>Passengers Detail</title>
+    <link rel="stylesheet" href="./passengers.css">
 </head>
 <body onload="logincredentialscheck()">
     <div class="container" >
@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="./flightSearch.html">Flights</a></li>
                     <li><a href="booking.html">History</a></li>
-                    <li><a href="#passengers">Passengers</a></li>
+                    <li><a href="./passengers.html">Passengers</a></li>
                     <li><a href="./updateCustomerData.html">Update Profile</a></li>
                     <li><a href="./login.html" onclick="logout()">Logout</a></li>
                 </ul>
@@ -21,14 +21,17 @@
         </header>
         <main>
 
-            <div id="Welcome">
-                <h2>Welcome to <br>Flight Booking System <br>Dashboard</h2>
-            </div>
+            <h2>Your Passengers List </h2>
+            <table id="common-passengers-table" border="2px"  width="50%" >
+
+            </table>
            
             
             
         </main>
     </div>
-    <script src="dashboardCustomer.js"></script>
+            
+
+    <script src="./passengers.js"></script>
 </body>
 </html>

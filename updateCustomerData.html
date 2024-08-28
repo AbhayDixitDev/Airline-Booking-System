@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="./updateCustomerData.css">
+</head>
+<body onload="logincredentialscheck()">
+    <div class="container" >
+        <header>
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="./flightSearch.html">Flights</a></li>
+                    <li><a href="booking.html">History</a></li>
+                    <li><a href="./passengers.html">Passengers</a></li>
+                    <li><a href="./updateCustomerData.html">Update Profile</a></li>
+                    <li><a href="./login.html" onclick="logout()">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <form id="update-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone"><br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password"><br><br>
+                <input type="hidden" id="id">
+                <button type="submit">Update</button>
+              </form>
+           
+            
+            
+        </main>
+    </div>
+    
+
+      
+<script>
+    const form = document.getElementById('update-form');
+
+    // Retrieve loginInfo from localStorage
+    const loginInfo = JSON.parse(localStorage.getItem('logininfo'));
+  
+    // Populate form fields with values from loginInfo
+    document.getElementById('id').value = loginInfo.id;
+    document.getElementById('name').value = loginInfo.name;
+    document.getElementById('email').value = loginInfo.email;
+    document.getElementById('phone').value = loginInfo.phone;
+    document.getElementById('address').value = loginInfo.address;
+    document.getElementById('password').value = loginInfo.password;
+  
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+  
+      // Update loginInfo with the updated form values
+      loginInfo.id = document.getElementById('id').value;
+      loginInfo.name = document.getElementById('name').value;
+      loginInfo.email = document.getElementById('email').value;
+      loginInfo.phone = document.getElementById('phone').value;
+      loginInfo.address = document.getElementById('address').value;
+      loginInfo.password = document.getElementById('password').value;
+  
+      // Store the updated loginInfo in localStorage
+      localStorage.setItem('logininfo', JSON.stringify(loginInfo));
+  
+      const data = {
+        id: loginInfo.id,
+        name: loginInfo.name,
+        email: loginInfo.email,
+        phone: loginInfo.phone,
+        address: loginInfo.address,
+        password: loginInfo.password
+      };
+  
+      console.log('Data to be sent:', data); // Log the data object to the console
+  
+      const userId = loginInfo.id;
+      fetch(`http://localhost:4000/customers/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error(response.statusText);
+        }
+      })
+      .then(data => console.log(data))
+      .catch(error => {
+        console.error(error);
+        if (error.status === 404) {
+          alert("Error: The requested resource was not found.");
+        } else {
+          alert("Error: " + error.message);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+

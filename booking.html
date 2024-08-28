@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="booking.css">
 </head>
 <body onload="logincredentialscheck()">
+    <h1 id="headingOfHistory">Flights Bookings Data</h1>
+
     <div class="container" >
         <header>
             <nav class="nav-right">
                 <ul>
                     <li><a href="./flightSearch.html">Flights</a></li>
                     <li><a href="./booking.html">History</a></li>
-                    <li><a href="#passengers">Passengers</a></li>
-                    <li><a href="#reports">Reports</a></li>
-                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="./passengers.html">Passengers</a></li>
+                    <li><a href="./updateCustomerData.html">Update Profile</a></li>
+                    <li><a href="./login.html" onclick="logout()">Logout</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+
             <table width="100%" border="1px" >
                 <tr>
                     <th width="150px">Departure City</th>

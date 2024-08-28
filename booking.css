@@ -9,23 +9,19 @@ body {
 }
 
 .container {
-    background-color: #ffffff;
+    background-color: #ffffff64;
 width: 68%;
     display: inline-block;
     /* border: 1px solid #ddd; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.544);
-    color: rgb(205, 0, 0);
+    color: rgb(0, 0, 0);
     /* opacity: 0.55; */
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 2%;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
-#Welcome{
-    margin-top: 0px;
-    
-}
-#Welcome h1{
-    font-size: 95px;   
-    }
+
 
 header {
     background-color: #1c0909;
@@ -154,4 +150,15 @@ button[type="submit"]:active {
     section {
         margin-bottom: 10px;
     }
+}
+
+
+
+#headingOfHistory{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
 }

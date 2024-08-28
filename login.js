@@ -1,4 +1,6 @@
 const dashboardCustomer = async () => {
+  localStorage.setItem('loginChecked', 'true');
+
     let data = await fetch("http://localhost:4000/customers");
     
     let response = await data.json();
@@ -39,6 +41,8 @@ const dashboardCustomer = async () => {
 
 
   const dashboardAdmin = async () => {
+    localStorage.setItem('loginChecked', 'true');
+
     let data = await fetch("http://localhost:4000/Admin");
     
     let response = await data.json();

@@ -1,3 +1,8 @@
+function logout(){
+  localStorage.removeItem('logininfo');
+  localStorage.setItem('loginChecked', 'false');
+}
+
 function logincredentialscheck(){
     if (!localStorage.getItem('loginChecked')) {
       if (localStorage.getItem('logininfo')) {

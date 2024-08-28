@@ -13,6 +13,11 @@ function logincredentialscheck(){
   }
 }
 
+function logout(){
+  localStorage.removeItem('logininfo');
+  localStorage.setItem('loginChecked', 'false');
+}
+
 
 (async function () {
     let url = "http://localhost:4000/airportInfo";

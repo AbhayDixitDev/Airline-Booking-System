@@ -6,8 +6,9 @@
 </head>
 
 <body onload="logincredentialscheck()">
-    <h1>Flight Booking Form</h1>
+    
     <form id="booking-form">
+      <h1>Flight Booking Form</h1>
       <label for="departure-city">Departure City:</label>
       <input type="text" id="departure-city" name="departure-city"><br>
       <label for="arrival-city">Arrival City:</label>
@@ -27,10 +28,18 @@
       </div>
   
       <input type="button" id="add-passenger" value="Add Another Passenger">
-      <input type="submit" value="Book Flight">
+      <input type="submit" value="Book Flight" onclick="bookFlight()">
       <a href="dashboardCustomer.html" class="btn-close">Close</a>
 
     </form>
+
+    <div id="ticket-container-main" style="display: none;">
+                  <div id="ticket-container">
+
+                  </div>
+                  <a href="dashboardCustomer.html" class="btn-close">Close</a>
+
+    </div>
 
 
     <script src="./bookings.js">

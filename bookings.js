@@ -14,7 +14,7 @@ function logincredentialscheck(){
 }
 
 
-
+//  post booking form data start
 const urlParams = new URLSearchParams(window.location.search);
 const flightid =urlParams.get('flightid');
 const departurecity =urlParams.get('departurecity');
@@ -62,9 +62,7 @@ addPassengerButton.addEventListener('click', () => {
   passengerCount = totalPassengers;
 });
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
+function bookFlight(){
   const departureCity = document.getElementById('departure-city').value;
   const arrivalCity = document.getElementById('arrival-city').value;
   const departureDate = document.getElementById('departure-date').value;
@@ -101,19 +99,77 @@ form.addEventListener('submit', (e) => {
     userEmail
   };
 
-  fetch('http://localhost:4000/bookings', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  })
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-});
+  setTimeout(() => {
+    fetch('http://localhost:4000/bookings', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+  }, 5000); // Delay the fetch request by 1 second
+};
 
 
 function close(){
     window.location.replace("dashboardCustomer.html");
 }
+
+
+
+
+
+//  post booking form data end
+
+
+
+// ShowTicket Function 
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Hide the booking form
+  document.getElementById('booking-form').style.display = 'none';
+
+  // Get the data from the form
+  const departureCity = document.getElementById('departure-city').value;
+  const arrivalCity = document.getElementById('arrival-city').value;
+  const departureDate = document.getElementById('departure-date').value;
+  const flightNumber = document.getElementById('flight-number').value;
+  const passengers = [];
+  for (let i = 1; i <= passengerCount; i++) {
+    const firstName = document.getElementById(`adult-${i}-first-name`).value;
+    const lastName = document.getElementById(`adult-${i}-last-name`).value;
+    const age = document.getElementById(`adult-${i}-age`).value;
+    passengers.push({ firstName, lastName, age });
+  }
+  const loginInfo = JSON.parse(localStorage.getItem('logininfo'));
+  const userEmail = loginInfo.email;
+
+  // Create the ticket HTML
+  const ticketHTML = `
+    <h3 style="color:red;">TICKET WILL DISAPPEAR AFTER 5 SECONDS</h3>
+    <h2>Flight Details</h2>
+    <p>Flight Number: ${flightNumber}</p>
+    <p>Departure City: ${departureCity}</p>
+    <p>Arrival City: ${arrivalCity}</p>
+    <p>Departure Date: ${departureDate}</p>
+    <h3>Passengers:</h3>
+    <ul type="none">
+      ${passengers.map((passenger, index) => `
+        <li>Passenger ${index + 1}: ${passenger.firstName} ${passenger.lastName} (Age: ${passenger.age})</li>
+      `).join('')}
+    </ul>
+    <p>Email: ${userEmail}</p>
+  `;
+
+  // Display the ticket
+  const ticketContainerMain = document.getElementById('ticket-container-main');
+  const ticketContainer = document.getElementById('ticket-container');
+  ticketContainer.innerHTML = ticketHTML;
+  ticketContainerMain.style.display = 'block';
+  return false;
+});

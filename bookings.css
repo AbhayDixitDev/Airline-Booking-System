@@ -4,6 +4,7 @@ body {
   }
   
   #booking-form {
+    display: block;
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
@@ -74,4 +75,34 @@ body {
 
   #dashboardCustomerRed{
     background-color: red;
+  }
+
+/* ticket show after booking */
+
+
+  #ticket-container{
+   margin: auto auto;
+   margin-top: 10%;
+    border: 1px solid black;
+    width: 250px;
+      padding: 40px;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px 10px;
+
+  }
+
+
+  ul, p, h2,h3{
+    color: white;
+    font-weight: 600px;
+    font-size: 16px;
+
+
+  }
+  #ticket-container ul{
+    margin-left: 0px;
+    padding: 0px;
+    font-size: 14px;
+
   }
