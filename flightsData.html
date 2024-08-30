@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flights Data</title>
-    <link rel="stylesheet" href="./flightsData.css">
+    <link rel="stylesheet" href="./Styles/flightsData.css">
 </head>
-<body>
-    <body onload="logincredentialscheck()">
+    <body onload="logincredentialscheck(); showFlights();" >
         <header>
             <nav class="nav-right">
                 <ul>
                     <li><a href="./flightsData.html">Flights Data</a></li>
+                    <li><a href="./airlineReg.html">Airline Data</a></li>
                     <li><a href="booking.html">History</a></li>
                     <li><a href="./passengers.html">Passengers</a></li>
                     <li><a href="./updateCustomerData.html">Update Profile</a></li>
@@ -127,9 +127,9 @@
             <label for="price">Price:</label>
             <input type="number" id="price" name="price"><br><br>
     
-            <input type="submit" value="Submit" onclick="return flightsReg()">
+            <input type="Button" value="Submit" onclick="return flightsReg()">
 <button type="cancel" onclick="close()">Cancel</button>
         </form>
-    <script src="./flightsData.js"></script>
+    <script src="./JS/flightsData.js"></script>
 </body>
 </html>

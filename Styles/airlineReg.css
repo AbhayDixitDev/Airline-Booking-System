@@ -1,0 +1,269 @@
+body {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    /* background-color: #f9f9f9; */
+    background-image: url("https://images7.alphacoders.com/468/468539.jpg");
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container {
+    max-width:100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: #1c0909;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 40vh;
+    z-index: 1;
+    font-size: 16px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 500px;
+    /* opacity: 0.6; */
+    /* transform: translateY(8%); */
+
+
+}
+
+.nav-right {
+    position: absolute;
+    top: 10%;
+    /* transform: translateY(-50%); */
+    right: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ff0202;
+}
+
+main {
+    background-color: #5a000000;
+}
+
+section {
+    /* background-color: #fff; */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #f30a0a;
+}
+
+button[type="submit"]:active {
+    background-color: #2277b8;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 20px;
+    }
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav-right {
+        position: relative;
+        top: 0;
+        transform: none;
+        right: 0;
+    }
+    main {
+        margin-right: 0;
+    }
+    section {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Airline Data  table property */
+
+
+#airlines-table{
+	width: 600px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	overflow-y: scroll;
+
+}
+#airlines-table tbody{
+	height: 250px;
+}
+
+
+/* add flight button style */
+
+#add-airline-button {
+    padding: 10px 20px;
+    
+    background-color: #4CAF50;
+    color: #ffffff;
+    
+    border-radius: 5px;
+    
+    cursor: pointer;
+  }
+  #add-airline-button:hover {
+    background-color: red;
+  }
+
+
+  /* add flight data form css */
+
+  #airline-form {
+    width: 300px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    left: 35%;
+    top: 200px;
+    display: none;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  
+  label {
+    display: block;
+    margin-bottom: 1px;
+  }
+  input[type="text"]{
+    width: 95%;
+    height: 20px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  } 
+   
+   
+  
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+
+  button[type="cancel"] {
+    background-color: #690000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="cancel"]:hover {
+    background-color: #ffffff;
+    color: #690000;
+    border: 1px solid #690000;
+  }
+
+
+
+  /*  css for update and delete buttons */
+
+  .btn {
+	margin: 5px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .btn-danger {
+	background-color: #ff0000;
+	color: #ffffff;
+  }
+  
+  .btn-primary {
+	background-color: #007bff;
+	color: #ffffff;
+  }

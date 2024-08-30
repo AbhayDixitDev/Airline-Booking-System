@@ -100,7 +100,7 @@ function bookFlight(){
   };
 
   setTimeout(() => {
-    fetch('http://localhost:4000/bookings', {
+    fetch('https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/bookings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

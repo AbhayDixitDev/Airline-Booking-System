@@ -31,7 +31,7 @@ const customerreg=()=>{
     "address":address,
     "password":password
   };
-  let url="http://localhost:4000/customers";
+  let url="https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/customers";
   let method={
     method: "POST", // Send a POST request to create a new product
     header: {

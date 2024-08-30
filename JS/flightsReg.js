@@ -33,7 +33,7 @@ function updateDuration() {
 
 //airline show function iifi
 (async function () {
-    let url = "http://localhost:4000/airlines";
+    let url = "https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/airlines";
   
     let data = await fetch(url);
   
@@ -59,7 +59,7 @@ function updateDuration() {
   // Airport show function iifi for departure
 
   (async function () {
-    let url = "http://localhost:4000/airportInfo";
+    let url = "https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/airportInfo";
   
     let data = await fetch(url);
   
@@ -82,7 +82,7 @@ function updateDuration() {
     // Airport show function iifi for arrival
 
     (async function () {
-        let url = "http://localhost:4000/airportInfo";
+        let url = "https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/airportInfo";
       
         let data = await fetch(url);
       
@@ -129,7 +129,7 @@ function updateDuration() {
             "price": price
         };
     
-        let url = "http://localhost:4000/flights";
+        let url = "https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/flights";
         let method = {
             method: "POST", // Send a POST request to create a new flight
             headers: {

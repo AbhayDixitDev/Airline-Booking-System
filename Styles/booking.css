@@ -32,7 +32,7 @@ header {
     right: 0;
     width: 200px;
     height: 30vh;
-    z-index: 1;
+    z-index: 20;
     font-size: 16px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 500px;
@@ -109,22 +109,25 @@ input[type="text"], input[type="password"] {
     width: 100%;
 }
 
-button[type="submit"] {
-    background-color: #3498db;
-    color: #fff;
+
+button[type="submit"]{
     padding: 10px 20px;
-    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-button[type="submit"]:hover {
-    background-color: #f30a0a;
-}
+    transition: background-color 0.3s ease-in-out;
+    
+  }
 
-button[type="submit"]:active {
-    background-color: #2277b8;
-}
+button[type="submit"]{
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
 /* Responsive design */
 
@@ -162,3 +165,86 @@ button[type="submit"]:active {
     margin: 0px;
     padding: 0px;
 }
+
+
+.edit-form {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left:30%;
+    background-color: white;
+    border-radius: 10px; /* add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2); /* add box shadow */
+    transition: box-shadow 0.3s, transform 0.3s; /* add transition for smooth effects */
+  }
+  
+  .edit-form:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 3); /* increase box shadow on hover */
+    cursor: pointer; /* change cursor to pointer on hover */
+  }
+  
+  .edit-form:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2); /* reduce box shadow on active */
+  }
+.edit-form h2 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.edit-form form{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.edit-form form label {
+    display: block;
+   
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+  }
+.edit-form form input[type="text"],input[type="date"] {
+    width: 80%;
+    padding: 10px;
+
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #history .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #history .edit-button {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  #history .edit-button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #history .delete-button {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  #history .delete-button:hover {
+    background-color: #e91e63;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+

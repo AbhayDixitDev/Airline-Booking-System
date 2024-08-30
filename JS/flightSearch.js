@@ -20,7 +20,7 @@ function logout(){
 
 
 (async function () {
-    let url = "http://localhost:4000/airportInfo";
+    let url = "https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/airportInfo";
   
     let data = await fetch(url);
   
@@ -43,7 +43,7 @@ function logout(){
 
 
 (async function () {
-    let url = "http://localhost:4000/airportInfo";
+    let url = "https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/airportInfo";
   
     let data = await fetch(url);
   
@@ -67,7 +67,7 @@ function logout(){
 
 
   function searchFlights() {
-    let url = "http://localhost:4000/flights";
+    let url = "https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/flights";
     let departureCity = document.querySelector("#departureCity").value;
     let arrivalCity = document.querySelector("#arrivalCity").value;
   

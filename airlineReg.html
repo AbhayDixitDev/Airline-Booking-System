@@ -2,13 +2,45 @@
 <html>
 <head>
 	<title>Airline Registration Form</title>
-	<link rel="stylesheet" href="airlineReg.css">
+	<link rel="stylesheet" href="./Styles/airlineReg.css">
 </head>
-<body onload="logincredentialscheck()">
+<body onload="logincredentialscheck(); showAirline();">
+	<header>
+		<nav class="nav-right">
+			<ul>
+				<li><a href="./flightsData.html">Flights Data</a></li>
+				<li><a href="./airlineReg.html">Airline Data</a></li>
+				<li><a href="booking.html">History</a></li>
+				<li><a href="./passengers.html">Passengers</a></li>
+				<li><a href="./updateCustomerData.html">Update Profile</a></li>
+				<li><a href="./login.html" onclick="logout()">Logout</a></li>
+			</ul>
+		</nav>
+	</header>
+
 	<div class="container">
-		<h1>Airline Registration Form</h1>
+		<h1>Airlines <span> <button id="add-airline-button" onclick="addAirline()">Add Airlines</button></span></h1>
+       
+
+		<main>
+			<table id="airlines-table" border="1px" >
+				<thead>
+				  <tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>IATA Code</th>
+					<th>Country</th>
+					<th colspan="2">Actions</th>
+				  </tr>
+				</thead>
+				<tbody id="airlines-data" >
+				  <!-- Airline data will be displayed here -->
+				</tbody>
+			  </table>					
+					</main>
+					</div>
 		<form>
-			<section class="airline-info">
+			<section id="airline-form">
 				<h2>Airline Information</h2>
 				<label for="name">Airline Name:</label>
 				<input type="text" id="name" name="airline-name" ><br><br>
@@ -16,10 +48,13 @@
 				<input type="text" id="iata_code" name="airline-code" maxlength="2"><br><br>
 				<label for="country">Country of Origin:</label>
 				<input type="text" id="country" name="country"><br><br>
+				<input type="submit" value="Submit" onclick=" return airlineReg()">
+            <button type="cancel" onclick="close()">Cancel</button>
 			</section>
-			<input type="submit" value="Submit" onclick=" return airlineReg()">
+			
+
 		</form>
 	</div>
-    <script src="./airlineReg.js"></script>
+    <script src="./JS/airlineReg.js"></script>
 </body>
 </html>

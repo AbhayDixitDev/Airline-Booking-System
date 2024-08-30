@@ -1,45 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Booking System Dashboard</title>
-    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="./Styles/booking.css">
 </head>
-<body onload="logincredentialscheck()">
+<body onload="loginCredentialsCheck()">
     <h1 id="headingOfHistory">Flights Bookings Data</h1>
-
+    <header>
+        <nav class="nav-right">
+            <ul>
+                <li><a href="./flightsData.html">Flights Data</a></li>
+				<li><a href="./airlineReg.html">Airline Data</a></li>
+				<li><a href="booking.html">History</a></li>
+				<li><a href="./passengers.html">Passengers</a></li>
+				<li><a href="./updateCustomerData.html">Update Profile</a></li>
+				<li><a href="./login.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container" >
-        <header>
-            <nav class="nav-right">
-                <ul>
-                    <li><a href="./flightSearch.html">Flights</a></li>
-                    <li><a href="./booking.html">History</a></li>
-                    <li><a href="./passengers.html">Passengers</a></li>
-                    <li><a href="./updateCustomerData.html">Update Profile</a></li>
-                    <li><a href="./login.html" onclick="logout()">Logout</a></li>
-                </ul>
-            </nav>
-        </header>
+     
         <main>
 
-            <table width="100%" border="1px" >
-                <tr>
-                    <th width="150px">Departure City</th>
-                    <th width="120px">Arrival City</th>
-                    <th width="165px">Flight Date</th>
-                    <th width="70px">Flight Number</th>
-                    <th>Passenger Details</th>
-
-                </tr>
-            </table>
+           
             <table id="history" width="100%" border="1px" >
             </table>
-           
-            
             
         </main>
     </div>
-    <script src="booking.js"></script>
+    <script src="./JS/booking.js"></script>
 </body>
 </html>

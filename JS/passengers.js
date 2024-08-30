@@ -21,7 +21,7 @@ function logincredentialscheck(){
 
 
 (function findCommonPassengers() {
-    const url = 'http://localhost:4000/bookings';
+    const url = 'https://flight-booking-json-l-git-cea0dd-abhay-dixits-projects-4f073080.vercel.app/bookings';
     fetch(url)
       .then(response => response.json())
       .then(data => {

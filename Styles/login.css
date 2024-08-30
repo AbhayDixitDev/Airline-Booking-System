@@ -62,7 +62,7 @@ body {
     font-size: 14px;
   }
   
-  button[type="submit"] {
+  button[type="button"] {
     background-color: #4CAF50;
     color: #fff;
     padding: 5px 10px;
@@ -72,7 +72,7 @@ body {
     font-size: 14px;
   }
   
-  button[type="submit"]:hover {
+  button[type="button"]:hover {
     background-color: #3e8e41;
   }
   

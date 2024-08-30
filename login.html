@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Flight Booking Login</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="./Styles/login.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,600&display=swap');
     </style>
@@ -21,7 +21,7 @@
             <label for="passwordCustomer">Password</label>
             <input type="password" id="passwordCustomer" name="password"  required>
           </div>
-          <button type="submit" onclick="return dashboardCustomer()">Login</button>
+          <button type="button" onclick="return dashboardCustomer()">Login</button>
           <p>Don't have an account? <a href="customerReg.html">Sign up</a></p>
         </form>
       </div>
@@ -36,7 +36,7 @@
             <label for="passwordAdmin">Password</label>
             <input type="password" id="passwordAdmin" name="password" required>
           </div>
-          <button type="submit" onclick=" return dashboardAdmin()">Login</button>
+          <button type="button" onclick=" return dashboardAdmin()">Login</button>
         </form>
       </div>
     </div>
@@ -44,6 +44,6 @@
   <div id="nameofwebsite">
     Flight Booking System
   </div>
-  <script src="./login.js"></script>
+  <script src="./JS/login.js"></script>
 </body>
 </html>
