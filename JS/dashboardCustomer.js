@@ -11,7 +11,7 @@ function logincredentialscheck(){
         alert("Succesfully Logged In");
       } else {
         alert("user not found, login first");
-        document.location.href="login.html";
+        document.location.href="index.html";
       }
       // Set the flag to indicate that the function has been executed
       localStorage.setItem('loginChecked', true);
