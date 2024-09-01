@@ -7,6 +7,9 @@ body {
 
 
 }
+::-webkit-scrollbar{
+  display: none;
+}
 
 .container {
     background-color: #ffffff64;
