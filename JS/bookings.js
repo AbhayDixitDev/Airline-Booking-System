@@ -13,7 +13,6 @@ function logincredentialscheck(){
   }
 }
 
-
 //  post booking form data start
 const urlParams = new URLSearchParams(window.location.search);
 const flightid =urlParams.get('flightid');
